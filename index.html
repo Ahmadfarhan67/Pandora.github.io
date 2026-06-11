@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pandora — $500 Voucher</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#F9EFF0;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* ── TOP BAR ── */
+.topbar{
+  width:100%;
+  background:#E8C4C8;
+  text-align:center;
+  padding:10px 16px;
+  font-size:13.5px;
+  font-weight:500;
+  color:#555;
+  letter-spacing:.2px;
+}
+
+/* ── PAGE BODY ── */
+.page{
+  max-width:520px;
+  width:100%;
+  padding:40px 24px 48px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* ── LOGO ── */
+.logo{
+  display:flex;flex-direction:column;align-items:center;
+  margin-bottom:28px;
+}
+.logo-crown{
+  font-size:18px;margin-bottom:2px;
+  color:#111;
+}
+.logo-wordmark{
+  font-size:32px;font-weight:800;letter-spacing:5px;
+  text-transform:uppercase;color:#111;
+}
+
+/* ── SUBTITLE ── */
+.subtitle{
+  font-size:16px;color:#999;font-weight:400;
+  text-align:center;margin-bottom:32px;
+}
+.subtitle b{color:#333;font-weight:600}
+
+/* ── STEPS ── */
+.steps{
+  width:100%;
+  display:flex;flex-direction:column;gap:12px;
+  margin-bottom:32px;
+}
+.step{
+  background:#fff;
+  border-radius:16px;
+  padding:18px 20px;
+  display:flex;align-items:center;gap:18px;
+  box-shadow:0 1px 6px rgba(0,0,0,.04);
+}
+.snum{
+  width:38px;height:38px;border-radius:50%;flex-shrink:0;
+  background:#D4899A;
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;font-weight:700;color:#fff;
+}
+.step-txt{
+  font-size:15px;font-weight:500;color:#222;
+}
+
+/* ── CTA ── */
+.cta{
+  display:block;width:100%;
+  text-decoration:none;
+  background:#111;color:#fff;
+  text-align:center;
+  font-size:18px;font-weight:800;letter-spacing:2px;
+  text-transform:uppercase;
+  padding:20px;border-radius:50px;
+  margin-bottom:16px;
+  transition:background .15s,transform .15s;
+  position:relative;overflow:hidden;
+}
+.cta:hover{background:#333;transform:translateY(-1px)}
+.cta:active{transform:scale(.98)}
+.cta::after{
+  content:'';position:absolute;top:-80%;left:-55%;width:26%;height:260%;
+  background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.1) 50%,transparent 70%);
+  transform:skewX(-14deg);animation:shim 3.5s infinite;
+}
+@keyframes shim{0%{left:-55%}100%{left:145%}}
+
+/* ── FOOTER NOTE ── */
+.footnote{
+  font-size:12px;color:#aaa;text-align:center;line-height:1.6;
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">3,500+ People Already Claimed</div>
+
+<!-- PAGE -->
+<div class="page">
+
+  <!-- LOGO -->
+  <div class="logo">
+    <div class="logo-crown">♛</div>
+    <div class="logo-wordmark">Pandora</div>
+  </div>
+
+  <!-- SUBTITLE -->
+  <div class="subtitle">Claim your <b>$500</b> Pandora voucher</div>
+
+  <!-- STEPS -->
+  <div class="steps">
+    <div class="step">
+      <div class="snum">1</div>
+      <div class="step-txt">Click "Claim Now"</div>
+    </div>
+    <div class="step">
+      <div class="snum">2</div>
+      <div class="step-txt">Enter your email and basic info</div>
+    </div>
+    <div class="step">
+      <div class="snum">3</div>
+      <div class="step-txt">Complete 4–5 sponsored deals</div>
+    </div>
+    <div class="step">
+      <div class="snum">4</div>
+      <div class="step-txt">Enjoy your $500 voucher!</div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <a href="https://giftclick.org/aff_c?offer_id=4070&aff_id=2526" class="cta" target="_blank" rel="noopener">
+    Claim Now
+  </a>
+
+  <!-- FOOTNOTE -->
+  <div class="footnote">Completion of sponsored deals is required to claim your voucher.</div>
+
+</div>
+
+</body>
+</html>
